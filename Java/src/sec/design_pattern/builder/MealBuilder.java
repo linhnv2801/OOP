@@ -1,0 +1,24 @@
+/**
+ * 
+ */
+package sec.design_pattern.builder;
+
+/**
+ * @author sev_user
+ * 
+ */
+public class MealBuilder {
+	public Meal prepareVegMeal() {
+		Meal meal = new Meal();
+		meal.addItem(new VegBurger());
+		meal.addItem(new Coke());
+		return meal;
+	}
+
+	public Meal prepareNonVegMeal() {
+		Meal meal = new Meal();
+		meal.addItem(new ChickenBurger());
+		meal.addItem(new Pepsi());
+		return meal;
+	}
+}
